@@ -1,0 +1,259 @@
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url(../../assets/fonts/Gilroy-Bold.woff);
+}
+@font-face {
+  font-family: Proxima-nova;
+  src: url(../../assets/fonts/proxima-nova-light-webfont.woff);
+}
+@font-face {
+  font-family: Photograph-Signature;
+  src: url(../../assets/fonts/Photograph-Signature.ttf);
+}
+*{
+    box-sizing:border-box;
+}
+
+.ServicesHeader{
+    background: url("../../assets/img/bg7.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.typing{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+.wholepage{
+  
+  background:#1f212d;
+  justify-content: space-between;
+  margin:0%;
+  padding: 0%;
+  height: 650px;
+  margin-top: 25%;
+
+  
+
+}
+
+.img1{
+  width: 5%;
+  padding-left: 15px;
+  padding-right: 20px;
+}
+.img2{
+  width: 10%;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+.img3{
+  width: 3%;
+  padding-left: 15px;
+  padding-right: 30px;
+  margin-left: 80px;
+}
+.img4{
+  width: 45%;
+  padding-left: 15px;
+  padding-right: 5px;
+  
+
+}
+.titre{
+  text-align: center;
+  padding-top:4%;
+}
+
+
+.services-container{
+  margin-top: 50%;
+  width: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;  
+  align-items: center;
+  margin: auto;
+
+}
+
+.service-card{
+  position: relative;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 10%;
+}
+.service-card .face{
+  width: 310px;
+  height: 255px;
+  transition: 0.5s;
+}
+
+.service-card .face.face1{
+  position: relative;
+  background :#e0ded2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+  transition:0.5s;
+  height: 220px;;
+}
+
+.service-card:hover .face.face1{
+  background: #2ea3dd;;
+  transform: translateY(0);
+  opacity: 1;
+  
+}
+
+.service-card .face.face1 .service-content{
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.card:hover .face.face1 .service-content{
+  opacity: 1;
+}
+
+.service-card .face.face1 .service-content img{
+  min-width: 100px;
+  margin-left: 35%;    
+}
+
+.service-card .face.face1 .service-content .nom-service{
+  margin: 10px 0 0;
+  font-family:Gilroy-Bold;
+  padding: 0;
+  color: #1f212d;
+  text-align: center;
+  font-size: 18px;
+  transition: 1s ;
+}
+
+
+.service-card .face.face2{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 40px 20px black;
+  transform: translateY(-100px);
+  height: 210px;
+  opacity: 0.9;
+ 
+}
+
+.service-card:hover .face.face2{
+  transform: translateY(0);
+  height: 270px;
+  opacity: 1;
+  
+}
+
+.service-card .face.face2 .service-content p{
+  margin-top: 0.5px;
+  text-align: center;
+  font-size: 13px;
+  font-family: Proxima-nova;
+}
+
+.service-card .face.face2 .service-content a:hover{
+  background: #333;
+  color: #e0ded2;
+}
+
+@media screen and (max-width: 400px) {
+  
+.services-container{
+  margin-top: 120%;
+  width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;  
+  align-items: center;
+  
+
+}
+}
+@media screen and (max-width: 600px) and (min-width: 400px) {
+  .services-container{
+  margin-top: 100%;
+  width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;  
+  align-items: center;
+  
+
+}
+
+}
+@media screen and (max-width: 960px) and (min-width: 600px) {
+  .services-container{
+  margin-top: 60%;
+  width: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;  
+  align-items: center;
+  
+
+}
+.service-card .face{
+  width: 170px;
+  height: 255px;
+  transition: 0.5s;
+  
+}
+.service-card .face.face1 .service-content .nom-service{
+  margin: 10px 0 0;
+  font-family:Gilroy-Bold;
+  padding: 0;
+  color: #1f212d;
+  text-align: center;
+  font-size: 13px;
+  transition: 1s ;
+}
+.img1{
+  width: 1px !important;
+  padding-left: 8px !important;
+  padding-right: 40px !important;
+  margin-right:  50px !important;
+}
+.img2{
+  width: 3px;
+  padding-right: 40px !important;
+  
+ 
+}
+.img3{
+  width: 3px !important;
+  padding-left: 8px ;
+  padding-right: 40px;
+  margin-left: 50px !important;
+}
+.img4{
+  width: 55%;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+.service-card .face.face2 .service-content p{
+  margin-top: 0.5px;
+  text-align: center;
+  font-size: 9px;
+  font-family: Proxima-nova;
+}
+
+}
+
+
+

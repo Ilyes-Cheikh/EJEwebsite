@@ -1,0 +1,69 @@
+@import "root.css";
+
+ 
+.primary{
+    background-color: var(--bg-primary);
+    color: white;
+}
+
+
+.secondry{
+    background-color: var(--bg-secondary);
+    color: white;
+}
+
+.secondry:active{
+    background-color: var(--bg-secondary);
+    filter: grayscale(40%);
+}
+
+.secondry-color{
+    color: var(--bg-secondary);
+}
+
+.secondry-color:active{
+    color: var(--bg-secondary);
+    filter: grayscale(40%);
+}
+
+.round-button{
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.icon-button{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+.main-container{
+    margin-top: 80px;
+    z-index: 1;
+}
+
+.td-sm{
+    width: 15vh;
+}
+.td-med{
+    width: 30vh;
+} 
+.td-lg{
+    width: 45vh;
+}   
+.td-xlg{
+    width: 60vh;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .td-mobile {
+      display: none;
+    }
+  }

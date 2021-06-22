@@ -1,0 +1,39 @@
+.Header{
+    min-height: 60vh;
+    min-width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;    
+  }
+  
+  .HeaderOverlay{
+    min-height: 60vh;
+    min-width: 100vw;
+    position: absolute;
+    background-color: #1f212d;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    opacity: 0.8;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+  
+  .HeaderText{
+    color: #fff;
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    z-index: 4 !important;
+    opacity: 1 !important;
+    text-align: center;
+    margin-top: 25vh;
+  }
+  

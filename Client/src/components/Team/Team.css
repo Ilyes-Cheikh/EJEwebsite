@@ -1,0 +1,357 @@
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url(../../assets/fonts/Gilroy-Bold.woff);
+}
+@font-face {
+  font-family: Proxima-nova;
+  src: url(../../assets/fonts/proxima-nova-light-webfont.woff);
+}
+@font-face {
+  font-family: Photograph-Signature;
+  src: url(../../assets/fonts/Photograph-Signature.ttf);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.our{
+  font-weight: bold;
+  font-family: Proxima-nova ;
+  color:white;
+  text-align: center;
+  font-size: 40px;
+
+}
+.team{
+  font-family: Proxima-nova ;
+  color: #2ea3dd;
+  text-align: center;
+  font-size: 40px;
+}
+.title{
+  text-align: center;
+}
+
+.Name{
+color: #1f212d;
+font-size: 25px;
+font-family: Proxima-nova;
+
+
+}
+
+.poste{
+  font-size: 18px;
+  padding: 5px;
+  background: #1f212d;
+  border-left: 8px  solid #2ea3dd;
+  color:#979797;
+  margin: 24px 0;
+  margin-left: 2vw;
+  margin-right: 60px;
+  font-family:Proxima-nova ;
+ 
+}
+
+
+
+.TeamContainer {
+  background: #1f212d;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: center;
+}
+
+.person-container {
+  padding: 5vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.person {
+  width: 200px;
+  height: 200px;
+  perspective: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  box-sizing: content-box;
+  box-shadow: 0 0 10px #2ea3dd;
+  margin: 2vw;
+}
+
+.person img {
+  max-width: 100%;
+}
+
+.person .front {
+  border-radius: 50%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+
+  transition: all 0.8s;
+}
+
+.person .back {
+  position: absolute;
+  top: 0;
+  height: 200px;
+  width: 200px;
+  background: #e0ded2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.1);
+  opacity: 0.5;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+  transition: 0.8s;
+}
+
+.person:hover .front {
+  transform: rotateY(180deg);
+}
+
+.person:hover .back {
+  transform: rotateY(0deg);
+}
+
+.social img {
+  margin: 8px;
+  height: 24px;
+}
+.designation{
+  margin-left: 7px;
+
+}
+@media screen and (max-width:400px) {
+  .TeamContainer {
+    background: #1f212d;
+    display: flex;
+    flex-wrap: column;
+    height: 100vh;
+    justify-content: space-between;
+  }
+  .person-container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .person {
+    width: 150px;
+    height: 150px;
+    perspective: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    box-sizing: content-box;
+    box-shadow: 0 0 10px #2ea3dd;
+    margin: 30px;
+  }
+  .person .back {
+    position: absolute;
+    top: 0;
+    height: 150px;
+    width: 150px;
+    background: #e0ded2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.1);
+    opacity: 0.5;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    transition: 0.8s;
+  }
+  .Name{
+    color: #1f212d;
+    font-size: 17px;
+    font-family: Proxima-nova;
+    
+    
+    }
+    .social img {
+      margin: 8px;
+      height: 20px;
+    }
+    .poste{
+      font-size: 14px;
+      padding: 5px;
+      background: #1f212d;
+      border-left: 8px  solid #2ea3dd;
+      color:#979797;
+      margin: 24px 0;
+      margin-left: 40px;
+      margin-right: 60px;
+      font-family:Proxima-nova ;
+     
+    }
+    .teampage{
+      margin-top: 30%;
+      
+    }
+  }
+    @media screen and (max-width: 600px) and (min-width: 400px) {
+      .TeamContainer {
+        background: #1f212d;
+        display: flex;
+        flex-wrap: column;
+        height: 100vh;
+        justify-content: space-between;
+      }
+      .person-container {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .person {
+        width: 180px;
+        height: 180px;
+        perspective: 400px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 5px solid rgba(255, 255, 255, 0.2);
+        box-sizing: content-box;
+        box-shadow: 0 0 10px #2ea3dd;
+        margin: 30px;
+      }
+      .person .back {
+        position: absolute;
+        top: 0;
+        height: 180px;
+        width: 180px;
+        background: #e0ded2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-radius: 50%;
+        box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.1);
+        opacity: 0.5;
+        transform: rotateY(-180deg);
+        backface-visibility: hidden;
+        transition: 0.8s;
+      }
+      .Name{
+        color: #1f212d;
+        font-size: 23px;
+        font-family: Proxima-nova;
+        
+        
+        }
+        .social img {
+          margin: 8px;
+          height: 24px;
+        }
+        .poste{
+          font-size: 20px;
+          padding: 5px;
+          background: #1f212d;
+          border-left: 8px  solid #2ea3dd;
+          color:#979797;
+          margin: 24px 0;
+          margin-left: 40px;
+          margin-right: 60px;
+          font-family:Proxima-nova ;
+         
+        }
+        .teampage{
+          margin-top: 30%;
+          
+        }
+  
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .TeamContainer {
+    background: #1f212d;
+    display: flex;
+    flex-wrap: column;
+    height: 100vh;
+    justify-content: space-between;
+    margin-left: 20vw;
+  }
+  .person-container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .person {
+    width: 200px;
+    height: 200px;
+    perspective: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    box-sizing: content-box;
+    box-shadow: 0 0 10px #2ea3dd;
+    margin: 10vw;
+  }
+  .person .back {
+    position: absolute;
+    top: 0;
+    height: 200px;
+    width: 200px;
+    background: #e0ded2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.1);
+    opacity: 0.5;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    transition: 0.8s;
+  }
+  .Name{
+    color: #1f212d;
+    font-size: 23px;
+    font-family: Proxima-nova;
+    
+    
+    }
+    .social img {
+      margin: 8px;
+      height: 25px;
+    }
+    .poste{
+      font-size: 20px;
+      padding: 5px;
+      background: #1f212d;
+      border-left: 8px  solid #2ea3dd;
+      color:#979797;
+      margin: 24px 0;
+      margin-left: 10vw;
+      margin-right: 60px;
+      font-family:Proxima-nova ;
+     
+    }
+    .teampage{
+      margin-top: 30%;
+      
+    }
+
+}

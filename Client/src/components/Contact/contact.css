@@ -1,0 +1,334 @@
+
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(../../assets/fonts/Gilroy-Bold.woff);
+  }
+  @font-face {
+    font-family: Proxima-nova;
+    src: url(../../assets/fonts/proxima-nova-light-webfont.woff);
+  }
+  @font-face {
+    font-family: Photograph-Signature;
+    src: url(../../assets/fonts/Photograph-Signature.ttf);
+  }
+ 
+  .bgr{
+      
+      position: relative;
+      display: flex;
+      height: 140vmin;
+      min-width: 100%;
+      margin-bottom: 50% !important;
+  }
+  
+  iframe{
+      
+      border-radius: 10px;
+      border: solid 0.4vw #2ea3dd;;
+      width :38vw;
+      height: 35vw;
+      position: absolute;
+      margin-top: 8%;
+      margin-left:45%;
+
+  } 
+  
+  .infotext{
+    text-align: left;
+    height: 32vw;
+    width:25vw;
+    margin-top: 10%;
+    margin-right: 32%;
+    margin-left: 24%;
+    position:relative;
+    background: rgba(0, 0, 0 , 0.6);
+    border-radius: 10px;
+    padding-top : 2.3vw;
+    padding-left:2%;  
+    
+  }
+
+
+  .mapandinfo{
+    position: relative;
+    width: 100%;
+    margin: auto 0;
+    margin-top: -10vmin;
+  
+  }
+
+  
+  dl{
+      display: flex;
+    }
+    dl dt{
+      position: relative;
+      display: block;
+      color: #666;
+      font-size: 2.5vw;
+      background: #171515;
+      border-radius: 50%;
+      margin: auto 0 ;
+      cursor: pointer;
+      transition: .5s;
+    }
+    dl dt:before{
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      height: inherit;
+      width: inherit;
+    
+      border-radius: 50%;
+      transform: scale(.9);
+      z-index: -1;
+      transition: .5s;
+    }
+    .wrapper {
+      position: absolute;
+      margin-top: -3%;
+      margin-left: 35%;
+    
+    }
+    
+  
+    .wrapper dl {
+      list-style: none;
+    }
+    
+    .wrapper dl dt {
+      width: 5.9vw;
+      height: 5.9vw;
+      margin: 0 1vw;
+      padding-top:0.5vw;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 50%;
+      border: 0.4vw solid #D8E2DC;
+      float: left;
+      transition: all 0.5s ease;
+    }
+    
+    .wrapper dl dt .fa {
+      color: white;
+      transition: all 0.5s ease;
+    }
+  
+    .wrapper dl dt:hover.facebook {
+      border: 0.4vw solid #2ea3dd;
+      box-shadow: 0 0 1vw #2ea3dd;
+      transition: all 0.5s ease;
+    }
+    
+    .wrapper dl dt:hover .fa-facebook-f{
+      color: #2ea3dd;
+      text-shadow: 0 0 1vw #2ea3dd;
+      transition: all 0.5s ease;
+    }
+    
+    
+    .wrapper dl dt:hover.twitter {
+      border: 0.4vw solid #2ea3dd;
+      box-shadow: 0 0 1vw #2ea3dd;
+      transition: all 0.5s ease;
+    }
+    
+    .wrapper dl dt:hover .fa-twitter {
+      color: #2ea3dd;
+      text-shadow: 0 0 1vw #2ea3dd;
+      transition: all 0.5s ease;
+    }
+    
+
+    .wrapper dl dt:hover.youtube {
+      border: 0.4vw solid #2ea3dd;
+      box-shadow: 0 0 1vw #2ea3dd;
+      transition: all 0.5s ease;
+    }
+    
+    .wrapper dl dt:hover .fa-youtube {
+      color: #2ea3dd;
+      text-shadow: 0 0 1vw #2ea3dd;
+      transition: all 0.5s ease;
+    }
+    
+    
+    .wrapper dl dt:hover.linkedin {
+      border: 0.4vw solid #2ea3dd;
+      box-shadow: 0 0 1vw#2ea3dd;
+      transition: all 0.5s ease;
+    }
+    
+    .wrapper dl dt:hover .fa-linkedin-in {
+      color: #2ea3dd;
+      text-shadow: 0 0 1vw #2ea3dd;
+      transition: all 0.5s ease;
+    }
+  
+    .infoss{
+    
+    font-family: Proxima-nova;
+    font-size: 1.2vw;
+    color:white;
+    padding-bottom: 0.5vw;
+    
+    
+   
+    }
+  
+    .details{
+      font-family: Gilroy-Bold;
+      font-size: 1.9vw;
+      color : white;
+      padding-bottom: 0.5vw;
+      
+      
+    }
+  
+    .youcontact{
+      color:white;
+      font-size: 1.1vw;
+      padding-bottom: 0.7vw;
+      font-family:  Proxima-nova;
+      margin-right: 2%;
+    }
+  
+    .footer{
+      position: absolute;
+      background-color: black;
+      min-width: 100%;
+      height: 15%;
+      bottom:0;
+    }
+  
+    .footertext{
+      color:white;
+      font-size: 1.2vw;
+      position: absolute;
+      margin-top:4%;
+      margin-left: 35%;
+      
+    }
+    @media screen and (max-width: 600px) and (min-width: 400px){
+      iframe{
+      
+        border-radius: 10px;
+        border: solid 0.4vw #2ea3dd;;
+        width :60vw;
+        height: 60vw;
+        position: absolute;
+        margin-top: 25%;
+        margin-left:30%;
+  
+    } 
+     
+  .infotext{
+    text-align: left;
+    height: 50vw;
+    width:40vw;
+    margin-top: 30%;
+    margin-right: 32%;
+    margin-left: 10%;
+    position:relative;
+    background: rgba(0, 0, 0 , 0.6);
+    border-radius: 10px;
+    padding-top : 2.3vw;
+    padding-left:2%;  
+    
+  }
+  .infoss{
+    
+    font-family: Proxima-nova;
+    font-size: 2vw;
+    color:white;
+    padding-bottom: 0.5vw;
+    
+    
+   
+    }
+    .details{
+      font-family: Gilroy-Bold;
+      font-size: 3vw;
+      color : white;
+      padding-bottom: 0.5vw;
+      
+      
+    }
+  
+    .youcontact{
+      color:white;
+      font-size: 1.5vw;
+      padding-bottom: 0.7vw;
+      font-family:  Proxima-nova;
+      margin-right: 2%;
+    }
+    
+    }
+    @media screen and (max-width: 1150px) and (min-width: 600px) {
+      iframe{
+      
+        border-radius: 10px;
+        border: solid 0.4vw #2ea3dd;;
+        width :55vw;
+        height: 55vw;
+        position: absolute;
+        margin-top: 25%;
+        margin-left:30%;
+  
+    } 
+     
+  .infotext{
+    text-align: left;
+    height: 45vw;
+    width:40vw;
+    margin-top: 30%;
+    margin-right: 32%;
+    margin-left: 10%;
+    position:relative;
+    background: rgba(0, 0, 0 , 0.6);
+    border-radius: 10px;
+    padding-top : 2.3vw;
+    padding-left:2%;  
+    
+  }
+  .infoss{
+    
+    font-family: Proxima-nova;
+    font-size: 2vw;
+    color:white;
+    padding-bottom: 0.5vw;
+    
+    
+   
+    }
+    .details{
+      font-family: Gilroy-Bold;
+      font-size: 3vw;
+      color : white;
+      padding-bottom: 0.5vw;
+      
+      
+    }
+  
+    .youcontact{
+      color:white;
+      font-size: 1.5vw;
+      padding-bottom: 0.7vw;
+      font-family:  Proxima-nova;
+      margin-right: 2%;
+    }
+    .footertext{
+      color:white;
+      font-size: 1.8vw;
+      position: absolute;
+      margin-top:4%;
+      margin-left: 26.5%;
+      
+    }
+  }
+    
+    
+  
+    
+   

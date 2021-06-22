@@ -1,0 +1,12 @@
+.blogCard{
+    box-shadow: 5px 10px 20px 1px black !important;
+    
+}
+
+.icon:hover{
+    color:#2ea3dd
+}
+
+.blogPhoto{
+    height: 250px !important;
+}

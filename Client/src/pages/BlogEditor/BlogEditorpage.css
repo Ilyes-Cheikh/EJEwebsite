@@ -1,0 +1,15 @@
+.texteditpage{
+    height: 150%;
+    background-color: white;
+    
+}
+.texteditor_header {
+    background-color: #e0ded2;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(6px + 1vmin);
+    color:#2ea3dd;
+  }

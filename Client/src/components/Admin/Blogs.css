@@ -1,0 +1,38 @@
+
+.BlogHeader{
+    
+    background: url("../../assets/img/blog_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+  .BlogBody{
+    margin-top: 75vh;
+    display: block;
+    }
+  
+  .MuiGrid-spacing-xs-10 > .MuiGrid-item {
+      padding: 10px !important;
+  }
+  
+  .MuiFab-primary {
+    color: #fff;
+    background-color: #2ea3dd !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 50% !important;
+  }
+
+  .logout{
+    padding-right: 5% !important;
+    padding-left: 5% !important;
+    margin-right: 5% !important;
+    width: auto !important;
+    margin-top: -2% !important;
+    margin-bottom: 3% !important;
+    position: relative;
+    float: right;
+  }
+  
