@@ -22,8 +22,9 @@ export default function Blog() {
             <img src={`/uploads/${blog.image}`} />
             </div>
             <h1 className="blogTitle">{blog.title}</h1>
-            <p className="blogContent">{blog.content}</p>
-            <div className="blogWriter"><span style={{fontWeight:"bold"}}>écrit par: </span>{blog.writer}</div>
+            <p dangerouslySetInnerHTML={{ __html: blog.content }}  className="blogContent">
+</p>
+            <div className="blogWriter"><span style={{fontWeight:"bold"}}>written by : </span>{blog.writer}</div>
         </div>
     )
 }

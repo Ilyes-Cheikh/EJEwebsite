@@ -210,7 +210,7 @@
       margin-left: 35%;
       
     }
-    @media screen and (max-width: 600px) and (min-width: 400px){
+    @media screen and (max-width: 600px) and (min-width: 200px){
       iframe{
       
         border-radius: 10px;
@@ -240,7 +240,7 @@
   .infoss{
     
     font-family: Proxima-nova;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color:white;
     padding-bottom: 0.5vw;
     

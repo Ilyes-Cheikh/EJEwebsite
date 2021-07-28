@@ -13,6 +13,7 @@ import ShareIcon from '@material-ui/icons/Share';
 import { FacebookShareButton, LinkedinShareButton, TwitterShareButton } from "react-share"
 import { FacebookIcon, LinkedinIcon, TwitterIcon } from "react-share"
 import { FaShareAlt } from 'react-icons/fa';
+import ReactHtmlParser  from 'react-html-parser';
 
 import "./Card.css"
 import { useHistory } from "react-router-dom"
@@ -44,6 +45,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 export default function BlogCard(props) {
+  const txt =  ReactHtmlParser(props.content)
   let history = useHistory()
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
@@ -71,7 +73,7 @@ export default function BlogCard(props) {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          {props.content.length > 100 ? props.content.substring(0, 150) + '...' : props.content}
+          {props.content.length > 100 ?  ReactHtmlParser(props.content.substring(0, 150) + '...') :   ReactHtmlParser(props.content)}
         </Typography>
       </CardContent>
       <CardActions disableSpacing style={{justifyContent:"space-around"}}>

@@ -15,7 +15,7 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import "./Card.css"
 import { useHistory } from "react-router-dom"
-
+import ReactHtmlParser  from 'react-html-parser';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -81,7 +81,7 @@ export default function BlogCard(props) {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          {props.content.length > 100 ? props.content.substring(0, 150) + '...' : props.content}
+        {props.content.length > 100 ?  ReactHtmlParser(props.content.substring(0, 150) + '...') :   ReactHtmlParser(props.content)}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
