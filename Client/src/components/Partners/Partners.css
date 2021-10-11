@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+#partners{
+    display:inline !important;
+}
 .partners{
     display:flex;
     justify-content: center;
@@ -11,6 +13,7 @@
     background-color: #e0ded2;
     height: 200px;
     overflow-x: hidden;
+    width: 100%;
 }
 .box{
     position: relative;

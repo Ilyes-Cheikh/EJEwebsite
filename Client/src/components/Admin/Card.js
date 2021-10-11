@@ -60,7 +60,7 @@ export default function BlogCard(props) {
   };
 
   const handleDelete = () => {
-    fetch(`http://localhost:5000/blogs/${props.id}`, {
+    fetch(`https://back.ensi-junior-entreprise.net/blogs/${props.id}`, {
       method: 'DELETE'
     }).then(() => {
       window.location.reload()

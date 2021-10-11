@@ -19,7 +19,7 @@ export default function Login() {
         Axios({
             method: "GET",
             withCredentials: true,
-            url: "http://localhost:5000/checkToken",
+            url: "https://back.ensi-junior-entreprise.net/checkToken",
             headers: {
                 'Content-Type': "application/json",
                 "x-access-token": localStorage.getItem("token")
@@ -40,7 +40,7 @@ export default function Login() {
                 password: loginPassword,
             },
             withCredentials: true,
-            url: "http://localhost:5000/login",
+            url: "https://back.ensi-junior-entreprise.net/login",
         }).then((response) => {
             if (response.data.auth) {
                 localStorage.setItem("token", response.data.token)

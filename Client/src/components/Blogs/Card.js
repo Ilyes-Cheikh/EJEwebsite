@@ -52,7 +52,7 @@ export default function BlogCard(props) {
   const img = `/uploads/${props.image}`
 
   const handleDelete = () => {
-    fetch(`http://localhost:5000/blogs/${props.id}`, {
+    fetch(`https://back.ensi-junior-entreprise.net/blogs/${props.id}`, {
       method: 'DELETE'
     }).then(() => {
       window.location.reload()
@@ -80,13 +80,13 @@ export default function BlogCard(props) {
 
       <div  className="share-button" >
         <span className="share"><FaShareAlt/>Share </span>
-        <FacebookShareButton url={`http://localhost:5000/blogs/${props.id}`}>
+        <FacebookShareButton url={`https://back.ensi-junior-entreprise.net/blogs/${props.id}`}>
           <FacebookIcon logoFillColor="white" round={true} size={30} className="socialicon"></FacebookIcon>
         </FacebookShareButton>
-        <LinkedinShareButton url={`http://localhost:5000/blogs/${props.id}`}>
+        <LinkedinShareButton url={`https://back.ensi-junior-entreprise.net/blogs/${props.id}`}>
           <LinkedinIcon logoFillColor="white" round={true} size={30} className="socialicon"> </LinkedinIcon>
         </LinkedinShareButton>
-        <TwitterShareButton url={`http://localhost:5000/blogs/${props.id}`}>
+        <TwitterShareButton url={`https://back.ensi-junior-entreprise.net/blogs/${props.id}`}>
           <TwitterIcon logoFillColor="white" round={true} size={30} className="socialicon"> </TwitterIcon>
         </TwitterShareButton>
         

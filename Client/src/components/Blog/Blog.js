@@ -9,7 +9,7 @@ export default function Blog() {
     const [blog, setBlog] = useState({})
     useEffect(() => {
         console.log(blogId)
-        Axios.get(`http://127.0.0.1:5000/blogs/${blogId}`).then((data) => {
+        Axios.get(`https://back.ensi-junior-entreprise.net/blogs/${blogId}`).then((data) => {
             console.log(data)
             setBlog(data.data)
         }).catch(console.log('error'))

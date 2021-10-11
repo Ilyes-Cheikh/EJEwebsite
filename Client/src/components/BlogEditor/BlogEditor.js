@@ -98,12 +98,12 @@ export default function BlogEditor() {
     dataform.append('content', article)
     dataform.append('image', image)
     dataform.append('writer', writer)
-    dataform.append('txt', txt)
+    
 
 
     setLoading(true)
     axios.post(
-     'http://localhost:5000/blogs/',
+     'https://back.ensi-junior-entreprise.net/blogs/',
       
      dataform
     ).then(response => {
